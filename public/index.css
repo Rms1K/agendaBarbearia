@@ -1,0 +1,117 @@
+*{text-decoration: none; margin: 0; padding: 0; box-sizing: border-box;}
+
+body {
+   background-color: #f1f1f1;
+}
+
+header{
+   display: flex;
+   border-bottom: 1px solid#616163;
+   width: 100vw;
+   height: 10vh;
+
+}
+
+header nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between; 
+   width: 625px;
+   margin: auto;
+   text-decoration: none;
+   height: 10vh;
+
+}
+
+header nav a img{
+   width: 70px;
+   height: 10vh;
+   margin-left:-320px;
+}
+
+header nav ul{
+   display: flex;
+   list-style-type: none;
+}
+
+header nav ul li{
+   margin: 15px;
+ 
+}
+
+header nav ul li a:hover{
+   color: black;
+   font-weight: 500;
+
+}
+
+header nav ul li a{
+   color: #606062;   
+}
+   
+img {
+   width: 120px;
+}
+
+div {
+   width: 600px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+h1 {
+   font-size: 20px;
+   font-family: Verdana;
+   color: #606062;
+   padding: 10px;
+   border: 5px solid #606062;
+}
+
+h2 {
+   font-size: 16px;
+   font-family: Verdana;
+   color: #7a797b;
+   margin: 35px 20px;
+}
+
+h3 {
+   font-size: 16px;
+   font-family: Verdana;
+   font-weight: normal;
+   color: #606062;
+   padding: 10px 0;
+   margin-top: 30px;
+   border-top: 2px solid #606062;
+   border-bottom: 2px solid #606062;
+}
+
+p {
+   font-size: 14px;
+   font-family: Verdana;
+   text-align: justify;
+   line-height: 32px;
+   color: #616163;
+   margin-bottom: 35px;
+}
+
+span {
+   font-weight: bold;
+}
+
+.link-agendar {
+   font-size: 16px;
+   font-family: 'Verdana';
+   font-weight: bold;
+   text-decoration: none;
+   padding: 10px 15px;
+   margin-top: 15px;  
+   border-radius: 25px;
+   background-color: #f1f1f1;
+   border: 4px solid #606062;
+   color: #606062;
+}
+
+.link-agendar:hover{
+   color: #1a1a33;
+   font-weight: bold;
+}

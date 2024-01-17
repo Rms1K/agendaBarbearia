@@ -1,0 +1,65 @@
+*{padding: 0; margin: 0; box-sizing: border-box; text-decoration: none;}
+
+body {
+  background-color: #f1f1f1;
+}
+
+header{
+    display: flex;
+    border-bottom: 1px solid#616163;
+    width: 100vw;
+    
+ 
+ }
+ 
+ header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 625px;
+    margin: auto;
+    height: 10vh;
+ }
+ 
+ header nav a img{
+    width: 70px;
+    height: 9vh;
+ }
+ 
+ header nav ul{
+    display: flex;
+    list-style-type: none;
+ }
+ 
+ header nav ul li{
+    margin: 15px;
+    margin-top: 15px;
+ }
+ 
+ header nav ul li a:hover{
+    color: black;
+    font-weight: 500;
+ 
+ }
+ 
+ header nav ul li a{
+    color: #606062;   
+ }
+
+.alert {
+    width: 300px;
+    position: absolute;
+    top: 400px;
+    left: 519px;
+}
+
+.form-cadusuario{
+    color: #606062;
+    width: 300px;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 38%;
+    top: 100px;
+}

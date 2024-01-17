@@ -1,0 +1,422 @@
+*{padding: 0; margin: 0; box-sizing: border-box; text-decoration: none;}
+
+body {
+  background-color: #f1f1f1;
+  
+}
+
+header{
+  display: flex;
+  border-bottom: 1px solid#616163;
+  width: 100vw;
+  height: 10vh;
+
+}
+
+header nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 625px;
+  margin: auto;
+  
+}
+
+header nav a img{
+  width: 70px;
+  height: 9vh;
+}
+
+header nav ul{
+  display: flex;
+  list-style-type: none;
+}
+
+header nav ul li{
+  margin: 15px;
+
+}
+
+header nav ul li a:hover{
+  color: black;
+  font-weight: 500;
+
+}
+
+header nav ul li a{
+  color: #606062;   
+}
+
+/*FIM HEADER*/
+
+.disponivel button {
+  width: 20px;
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 15px;
+}
+
+.calendar-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    width: 850px;
+}
+
+.agenda {
+    max-width: 400px;
+    width: 300px;
+    height: 360px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 155px;
+    left: 370px;
+
+  }
+
+  .horario-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    margin-top: 5px;
+  }
+
+  .horario {
+    flex: 0 0 80px;
+  }
+
+  .horario-fechado{
+    margin-left: 47px;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+    margin-top: 5px;
+  }
+
+  .button {
+    flex: 0 0 100px;
+    background-color: #4caf50;
+    color: #fff;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .cabecalho{
+    font-size: 70px;
+    font-weight: 900;
+    width: 100%;
+    text-align: center;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .calendario .cabecalho span{
+    cursor: pointer;
+  }
+  
+  .calendario .cabecalho span:last-of-type{
+    margin-left: 35px;
+  }
+  
+  .calendario .cabecalho span:last-of-type:hover svg path{
+    stroke: #d0d0d0;
+  }
+  
+  .calendario .cabecalho span:first-of-type {
+    margin-right: 30px;
+  }
+  
+  .calendario .cabecalho span:first-of-type:hover svg path {
+    stroke: #d0d0d0;
+  }
+  
+  .calendario .cabecalho span svg {
+    display: block;
+    margin:auto;
+  }
+  
+  .calendario .cabecalho p span {
+    margin: 0 !important;
+    font-size: 60px;
+  }
+  
+ .calendario {
+    
+    width: 360px;
+    height: 450px;
+    margin-left: 30px;
+    
+  }
+  
+  table {
+    border-collapse: collapse;
+  }
+  
+  td, th {
+    text-align: center;
+    font-size: 17px;
+    width: 45px;
+    height: 45px;
+  }
+  
+  th {
+    font-weight: 300;
+    
+  }
+  
+  td {
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  td.teste::after {
+    content: " ";
+    background: #4caf50;
+    width: 24px;
+    height: 12px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: -23px;
+    border-radius: 5px;
+  }
+  
+  td.outherMount {
+    color: #918f9b;
+  }
+  
+  tr:first-of-type th {
+    padding-bottom: 25px;
+  }
+  
+  td:hover {
+    background: rgba(0,0,0,0.2);
+  }
+
+  #modal {
+    display: none;
+    position: fixed;
+    top: 52%;
+    left: 61%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #606062;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    height: 350px;
+  }
+
+  #modal-horarios {
+    display: none;
+    position: fixed;
+    top: 49.7%;
+    left: 33.7%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #606062;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    height: 420px;
+  }
+
+  #modalMeusDados{
+    display: none;
+    position: fixed;
+    top: 49.7%;
+    left: 33.7%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #606062;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    height: 420px;
+  }
+
+  #modalMeusDados form{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+ #modal-editar-horario{
+    display: none;
+    position: fixed;
+    top: 49.7%;
+    left: 33.7%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #606062;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 420px;
+    height: 420px;
+  }
+
+  #modal-editar-horario form{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #abrirModalEditar{
+    cursor: pointer;
+  }
+
+  #btnFecharModalEditar, #btnFecharModalMeusDados{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 7px;
+    top: -2px;
+  }
+
+ .barraLateral a:hover{
+  cursor: pointer;
+ }
+
+
+  .meusHorarios div{
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  #modal-horarios button, #modal-editar-horario button, #modalMeusDados button{
+    margin-top: 10px;
+
+  }
+
+  .meuHorario{
+    width: 300px;
+    height: 40px;
+   
+  }
+
+  .meuHorario form{
+    margin-top: 20px;
+    border: 1px solid #606062;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .meuHorario form input[type="submit"]{
+      border: none;
+  }
+
+  .meuHorario form input[type="submit"]:hover{
+    cursor: pointer;
+}
+
+  .meuHorario form a{
+    color: #606062;
+}
+
+.btn-excluir{
+  color: #606062;
+}
+
+#excluirConta input{
+  width: 120px;
+  height: 30px;
+  color: black;
+  margin: 30px auto 0 auto;
+  border: 2px solid #606062;
+}
+
+#excluirConta input:hover{
+  
+  color: black;
+  font-weight: bold;
+
+}
+  
+
+  #modal form{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  #modal form button{
+    margin-top: 10px;
+
+  }
+
+  #btnFecharModal{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 7px;
+    top: -2px;
+  }
+
+  #dataAtual{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    color: #606062;;
+    position: absolute;
+    top: 110px;
+    left: 370px;
+  }
+
+  .barraLateral {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 90vh;
+    border: 1px solid #606062;
+    
+  }
+
+  .barraLateral a {
+    width: 244px;
+    height: 40px;
+    margin-left: 2px;
+    border: 1px solid #606062;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #606062;
+  }
+.btn1-barraLateral{
+  margin-top: 44px;
+}
+
+.btn2-barraLateral{
+  margin-top: 10px;
+}
+
+
+.alert {
+    width: 300px;
+    position: absolute;
+    top: 590px;
+    left: 529px;
+}
+
+
+
+
+
+  
