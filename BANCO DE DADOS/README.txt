@@ -1,5 +1,5 @@
 
-Entrar -> 
+Entrar -> localhost/phpmyadmin
 
 Criar um banco com o nome de "barbearia"
 
